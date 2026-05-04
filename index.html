@@ -268,7 +268,7 @@ function renderTable() {
     `<tr onclick="showDetail(${c.tpid})" style="cursor:pointer">
        <td><strong>${c.name}</strong></td>
        <td class="money">${c.tpid}</td>
-       <td>${HQ_MAP[c.tpid] || '—'}</td>
+       <td>${HQ_MAP[c.tpid] || ''}</td>
        <td class="money">${fmt$(c.total_acr)}</td>
        <td class="money">${fmt$(c.latest_acr)}</td>
        <td>${fmtPct(c.mom_change)}</td>
