@@ -134,6 +134,32 @@
   .obj-card .obj-q { font-weight: 700; font-size: 14px; color: #1e293b; margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
   .obj-card .obj-a { font-size: 13px; color: #64748b; line-height: 1.6; padding-left: 28px; }
 
+  .hq { font-size: 13px; color: #64748b; white-space: nowrap; }
+
+  /* LinkedIn Templates */
+  .linkedin-templates { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; }
+  .linkedin-card {
+    background: white; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+  .linkedin-header {
+    padding: 16px 20px; font-weight: 700; font-size: 14px; color: white;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .linkedin-header.spike { background: linear-gradient(135deg, #EF4444, #DC2626); }
+  .linkedin-header.grow { background: linear-gradient(135deg, #10B981, #059669); }
+  .linkedin-header.new { background: linear-gradient(135deg, #6366F1, #4F46E5); }
+  .linkedin-header.conn { background: linear-gradient(135deg, #0077B5, #005E93); }
+  .linkedin-body {
+    padding: 20px; font-size: 13px; color: #475569; line-height: 1.7;
+  }
+  .linkedin-body .msg-type {
+    background: #f0f9ff; padding: 8px 12px; border-radius: 8px; margin-bottom: 12px;
+    font-size: 12px; border-left: 3px solid #0077B5; color: #0077B5; font-weight: 600;
+  }
+  .linkedin-body p { margin-bottom: 12px; }
+  .char-count { font-size: 11px; color: #94a3b8; text-align: right; margin-top: 4px; }
+
   .footer {
     text-align: center; padding: 32px; color: #94a3b8; font-size: 12px;
     border-top: 1px solid #e2e8f0; margin-top: 40px;
@@ -186,13 +212,14 @@
   <table>
     <thead>
       <tr>
-        <th>#</th><th>Account</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>Spike Month</th><th>Spike $</th><th>Spike %</th><th>Trend</th>
+        <th>#</th><th>Account</th><th>HQ</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>Spike Month</th><th>Spike $</th><th>Spike %</th><th>Trend</th>
       </tr>
     </thead>
     <tbody>
     <tr>
         <td class="rank">1</td>
         <td class="acct-name">Applovin Corporation</td>
+        <td class="hq">Palo Alto, CA</td>
         <td class="tpid">46494496</td>
         <td class="money">$1.3M</td>
         <td class="money">$96K</td>
@@ -208,6 +235,7 @@
     <tr>
         <td class="rank">2</td>
         <td class="acct-name">Toric Labs, Inc.</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">65537579</td>
         <td class="money">$1.1M</td>
         <td class="money">$87K</td>
@@ -223,6 +251,7 @@
     <tr>
         <td class="rank">3</td>
         <td class="acct-name">QUINTOANDAR QUINTOANDAR</td>
+        <td class="hq">São Paulo, Brazil</td>
         <td class="tpid">65825610</td>
         <td class="money">$1.1M</td>
         <td class="money">$94K</td>
@@ -238,6 +267,7 @@
     <tr>
         <td class="rank">4</td>
         <td class="acct-name">Qventus</td>
+        <td class="hq">Mountain View, CA</td>
         <td class="tpid">65520917</td>
         <td class="money">$1.1M</td>
         <td class="money">$84K</td>
@@ -253,6 +283,7 @@
     <tr>
         <td class="rank">5</td>
         <td class="acct-name">SambaNova Systems, Inc.</td>
+        <td class="hq">Palo Alto, CA</td>
         <td class="tpid">46640050</td>
         <td class="money">$1.2M</td>
         <td class="money">$94K</td>
@@ -268,6 +299,7 @@
     <tr>
         <td class="rank">6</td>
         <td class="acct-name">Sendbird</td>
+        <td class="hq">San Mateo, CA</td>
         <td class="tpid">35529861</td>
         <td class="money">$738K</td>
         <td class="money">$52K</td>
@@ -283,6 +315,7 @@
     <tr>
         <td class="rank">7</td>
         <td class="acct-name">AXTRIA</td>
+        <td class="hq">Berkeley Heights, NJ</td>
         <td class="tpid">35513242</td>
         <td class="money">$751K</td>
         <td class="money">$57K</td>
@@ -298,6 +331,7 @@
     <tr>
         <td class="rank">8</td>
         <td class="acct-name">SNAPLOGIC DEFAULT ACTIVE DIRECTORY</td>
+        <td class="hq">San Mateo, CA</td>
         <td class="tpid">35115743</td>
         <td class="money">$817K</td>
         <td class="money">$74K</td>
@@ -313,6 +347,7 @@
     <tr>
         <td class="rank">9</td>
         <td class="acct-name">Xyla</td>
+        <td class="hq">New York, NY</td>
         <td class="tpid">65507856</td>
         <td class="money">$703K</td>
         <td class="money">$56K</td>
@@ -328,6 +363,7 @@
     <tr>
         <td class="rank">10</td>
         <td class="acct-name">ValiMail</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">35074550</td>
         <td class="money">$453K</td>
         <td class="money">$34K</td>
@@ -343,6 +379,7 @@
     <tr>
         <td class="rank">11</td>
         <td class="acct-name">Groq</td>
+        <td class="hq">Mountain View, CA</td>
         <td class="tpid">47944286</td>
         <td class="money">$333K</td>
         <td class="money">$25K</td>
@@ -358,6 +395,7 @@
     <tr>
         <td class="rank">12</td>
         <td class="acct-name">KIBO COMMERCE</td>
+        <td class="hq">Dallas, TX</td>
         <td class="tpid">34588961</td>
         <td class="money">$369K</td>
         <td class="money">$31K</td>
@@ -373,6 +411,7 @@
     <tr>
         <td class="rank">13</td>
         <td class="acct-name">Qrvey</td>
+        <td class="hq">Boca Raton, FL</td>
         <td class="tpid">65532290</td>
         <td class="money">$179K</td>
         <td class="money">$14K</td>
@@ -401,13 +440,14 @@
   <table>
     <thead>
       <tr>
-        <th>#</th><th>Account</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>First Mo</th><th>Growth</th><th>Trend</th>
+        <th>#</th><th>Account</th><th>HQ</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>First Mo</th><th>Growth</th><th>Trend</th>
       </tr>
     </thead>
     <tbody>
     <tr>
         <td class="rank">1</td>
         <td class="acct-name">DREMIO</td>
+        <td class="hq">Santa Clara, CA</td>
         <td class="tpid">58762749</td>
         <td class="money">$411K</td>
         <td class="money">$95K</td>
@@ -422,6 +462,7 @@
     <tr>
         <td class="rank">2</td>
         <td class="acct-name">Abnormal Security</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">63434110</td>
         <td class="money">$724K</td>
         <td class="money">$158K</td>
@@ -436,6 +477,7 @@
     <tr>
         <td class="rank">3</td>
         <td class="acct-name">Helm.ai</td>
+        <td class="hq">Menlo Park, CA</td>
         <td class="tpid">58399349</td>
         <td class="money">$1.1M</td>
         <td class="money">$235K</td>
@@ -450,6 +492,7 @@
     <tr>
         <td class="rank">4</td>
         <td class="acct-name">Plume Design, Inc.</td>
+        <td class="hq">Palo Alto, CA</td>
         <td class="tpid">61596266</td>
         <td class="money">$508K</td>
         <td class="money">$106K</td>
@@ -464,6 +507,7 @@
     <tr>
         <td class="rank">5</td>
         <td class="acct-name">Branch Metrics</td>
+        <td class="hq">Palo Alto, CA</td>
         <td class="tpid">29051420</td>
         <td class="money">$137K</td>
         <td class="money">$29K</td>
@@ -478,6 +522,7 @@
     <tr>
         <td class="rank">6</td>
         <td class="acct-name">Forge</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">114333132</td>
         <td class="money">$1.1M</td>
         <td class="money">$225K</td>
@@ -492,6 +537,7 @@
     <tr>
         <td class="rank">7</td>
         <td class="acct-name">Female-Invest</td>
+        <td class="hq">Copenhagen, Denmark</td>
         <td class="tpid">112003761</td>
         <td class="money">$801K</td>
         <td class="money">$167K</td>
@@ -506,6 +552,7 @@
     <tr>
         <td class="rank">8</td>
         <td class="acct-name">Weights</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">113980411</td>
         <td class="money">$1.0M</td>
         <td class="money">$207K</td>
@@ -520,6 +567,7 @@
     <tr>
         <td class="rank">9</td>
         <td class="acct-name">Figma, Inc.</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">48301902</td>
         <td class="money">$66K</td>
         <td class="money">$14K</td>
@@ -534,6 +582,7 @@
     <tr>
         <td class="rank">10</td>
         <td class="acct-name">HUMAN SECURITY</td>
+        <td class="hq">New York, NY</td>
         <td class="tpid">119334288</td>
         <td class="money">$289K</td>
         <td class="money">$60K</td>
@@ -548,6 +597,7 @@
     <tr>
         <td class="rank">11</td>
         <td class="acct-name">Concordance inc</td>
+        <td class="hq">Scottsdale, AZ</td>
         <td class="tpid">116909192</td>
         <td class="money">$677K</td>
         <td class="money">$137K</td>
@@ -562,6 +612,7 @@
     <tr>
         <td class="rank">12</td>
         <td class="acct-name">Bixby Research and Analytics LLC</td>
+        <td class="hq">Austin, TX</td>
         <td class="tpid">59318570</td>
         <td class="money">$674K</td>
         <td class="money">$135K</td>
@@ -576,6 +627,7 @@
     <tr>
         <td class="rank">13</td>
         <td class="acct-name">Noom</td>
+        <td class="hq">New York, NY</td>
         <td class="tpid">62198863</td>
         <td class="money">$631K</td>
         <td class="money">$131K</td>
@@ -590,6 +642,7 @@
     <tr>
         <td class="rank">14</td>
         <td class="acct-name">Writer Inc</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">27098491</td>
         <td class="money">$563K</td>
         <td class="money">$112K</td>
@@ -604,6 +657,7 @@
     <tr>
         <td class="rank">15</td>
         <td class="acct-name">REIFY HEALTH</td>
+        <td class="hq">Boston, MA</td>
         <td class="tpid">61863356</td>
         <td class="money">$364K</td>
         <td class="money">$71K</td>
@@ -618,6 +672,7 @@
     <tr>
         <td class="rank">16</td>
         <td class="acct-name">timeOS</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">115976604</td>
         <td class="money">$698K</td>
         <td class="money">$133K</td>
@@ -632,6 +687,7 @@
     <tr>
         <td class="rank">17</td>
         <td class="acct-name">Rippling</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">43283050</td>
         <td class="money">$293K</td>
         <td class="money">$58K</td>
@@ -646,6 +702,7 @@
     <tr>
         <td class="rank">18</td>
         <td class="acct-name">TALENT INC</td>
+        <td class="hq">Toronto, Canada</td>
         <td class="tpid">114793219</td>
         <td class="money">$948K</td>
         <td class="money">$185K</td>
@@ -660,6 +717,7 @@
     <tr>
         <td class="rank">19</td>
         <td class="acct-name">GHGSAT INC.</td>
+        <td class="hq">Montreal, Canada</td>
         <td class="tpid">61196799</td>
         <td class="money">$308K</td>
         <td class="money">$60K</td>
@@ -674,6 +732,7 @@
     <tr>
         <td class="rank">20</td>
         <td class="acct-name">CLOUDBEES INC</td>
+        <td class="hq">San Jose, CA</td>
         <td class="tpid">30358361</td>
         <td class="money">$634K</td>
         <td class="money">$125K</td>
@@ -701,13 +760,14 @@
   <table>
     <thead>
       <tr>
-        <th>#</th><th>Account</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>Started</th><th>Active</th><th>Trend</th>
+        <th>#</th><th>Account</th><th>HQ</th><th>TPID</th><th>FY26 YTD</th><th>Latest Mo</th><th>Started</th><th>Active</th><th>Trend</th>
       </tr>
     </thead>
     <tbody>
     <tr>
         <td class="rank">1</td>
         <td class="acct-name">Blueocean</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">65496212</td>
         <td class="money">$283K</td>
         <td class="money">$70K</td>
@@ -722,6 +782,7 @@
     <tr>
         <td class="rank">2</td>
         <td class="acct-name">REFLECTION AI, INC.</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">133132730</td>
         <td class="money">$199K</td>
         <td class="money">$66K</td>
@@ -736,6 +797,7 @@
     <tr>
         <td class="rank">3</td>
         <td class="acct-name">Lovable</td>
+        <td class="hq">Stockholm, Sweden</td>
         <td class="tpid">127716803</td>
         <td class="money">$214K</td>
         <td class="money">$56K</td>
@@ -750,6 +812,7 @@
     <tr>
         <td class="rank">4</td>
         <td class="acct-name">ApplyBoard</td>
+        <td class="hq">Kitchener, Canada</td>
         <td class="tpid">64449767</td>
         <td class="money">$316K</td>
         <td class="money">$51K</td>
@@ -764,6 +827,7 @@
     <tr>
         <td class="rank">6</td>
         <td class="acct-name">MAPBOX</td>
+        <td class="hq">Washington, DC</td>
         <td class="tpid">32621290</td>
         <td class="money">$281K</td>
         <td class="money">$50K</td>
@@ -778,6 +842,7 @@
     <tr>
         <td class="rank">7</td>
         <td class="acct-name">HOUZZ INC</td>
+        <td class="hq">Palo Alto, CA</td>
         <td class="tpid">33052114</td>
         <td class="money">$304K</td>
         <td class="money">$49K</td>
@@ -792,6 +857,7 @@
     <tr>
         <td class="rank">8</td>
         <td class="acct-name">VOX MEDIA LLC</td>
+        <td class="hq">Washington, DC</td>
         <td class="tpid">34316389</td>
         <td class="money">$120K</td>
         <td class="money">$38K</td>
@@ -806,6 +872,7 @@
     <tr>
         <td class="rank">9</td>
         <td class="acct-name">1QB Information Technologies</td>
+        <td class="hq">Vancouver, Canada</td>
         <td class="tpid">64630313</td>
         <td class="money">$133K</td>
         <td class="money">$34K</td>
@@ -820,6 +887,7 @@
     <tr>
         <td class="rank">10</td>
         <td class="acct-name">BIOMAPAS</td>
+        <td class="hq">Vilnius, Lithuania</td>
         <td class="tpid">33775972</td>
         <td class="money">$181K</td>
         <td class="money">$32K</td>
@@ -834,6 +902,7 @@
     <tr>
         <td class="rank">11</td>
         <td class="acct-name">Dapper Labs Inc.</td>
+        <td class="hq">Vancouver, Canada</td>
         <td class="tpid">64459848</td>
         <td class="money">$133K</td>
         <td class="money">$30K</td>
@@ -848,6 +917,7 @@
     <tr>
         <td class="rank">12</td>
         <td class="acct-name">loft</td>
+        <td class="hq">São Paulo, Brazil</td>
         <td class="tpid">64946444</td>
         <td class="money">$145K</td>
         <td class="money">$30K</td>
@@ -862,6 +932,7 @@
     <tr>
         <td class="rank">13</td>
         <td class="acct-name">Tenstorrent Inc</td>
+        <td class="hq">Toronto, Canada</td>
         <td class="tpid">118121629</td>
         <td class="money">$86K</td>
         <td class="money">$29K</td>
@@ -876,6 +947,7 @@
     <tr>
         <td class="rank">14</td>
         <td class="acct-name">QGENDA INC</td>
+        <td class="hq">Atlanta, GA</td>
         <td class="tpid">33252354</td>
         <td class="money">$63K</td>
         <td class="money">$17K</td>
@@ -890,6 +962,7 @@
     <tr>
         <td class="rank">15</td>
         <td class="acct-name">Lavita AI</td>
+        <td class="hq">New York, NY</td>
         <td class="tpid">65327128</td>
         <td class="money">$37K</td>
         <td class="money">$13K</td>
@@ -904,6 +977,7 @@
     <tr>
         <td class="rank">16</td>
         <td class="acct-name">Bluecore</td>
+        <td class="hq">New York, NY</td>
         <td class="tpid">33577510</td>
         <td class="money">$43K</td>
         <td class="money">$12K</td>
@@ -918,6 +992,7 @@
     <tr>
         <td class="rank">17</td>
         <td class="acct-name">Gyan, Inc</td>
+        <td class="hq">San Francisco, CA</td>
         <td class="tpid">129143846</td>
         <td class="money">$32K</td>
         <td class="money">$10K</td>
@@ -1042,6 +1117,101 @@
         <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
       </div>
     </div>
+  </div>
+</div>
+
+
+<!-- LINKEDIN OUTREACH -->
+<div class="section">
+  <div class="section-header">
+    <div class="section-icon" style="background:#E0F2FE;">&#x1F517;</div>
+    <div>
+      <div class="section-title">LinkedIn Outreach Messaging</div>
+      <div class="section-desc">Connection requests &amp; InMail templates &mdash; keep it short, personalized, and conversational</div>
+    </div>
+  </div>
+  <div class="linkedin-templates">
+
+    <!-- Connection Request -->
+    <div class="linkedin-card">
+      <div class="linkedin-header conn">&#x1F91D; Connection Request Note</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4AC; LinkedIn Connection Request &bull; 300 char max</div>
+        <p>Hi [First Name] &ndash; I lead Azure partnerships with high-growth Digital Natives at Microsoft. [Company Name]&rsquo;s momentum caught my eye and I&rsquo;d love to connect. No pitch &ndash; just interested in learning more about what you&rsquo;re building.</p>
+        <div class="char-count">~230 characters</div>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
+    <!-- Spike InMail -->
+    <div class="linkedin-card">
+      <div class="linkedin-header spike">&#x26A1; SPIKE &ndash; LinkedIn InMail</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4E9; LinkedIn InMail</div>
+        <p>Hi [First Name],</p>
+        <p>I noticed <strong>[Company Name]</strong> had a significant jump in Azure usage recently &ndash; that kind of acceleration usually signals something exciting happening under the hood (new workload, migration, scaling event).</p>
+        <p>I work with high-growth Digital Natives at Microsoft to build strategic partnerships &ndash; not vendor relationships. Companies at this inflection point often benefit from:</p>
+        <p>&bull; Custom pricing &amp; capacity planning<br>&bull; GTM &amp; Marketplace co-sell<br>&bull; Dedicated engineering support</p>
+        <p>Would a 20-minute call be worth it to explore what a partnership could look like?</p>
+        <p>Best,<br>Blake Giles<br>Senior BDM | Azure HTP &ndash; Digital Natives</p>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
+    <!-- Growing InMail -->
+    <div class="linkedin-card">
+      <div class="linkedin-header grow">&#x1F4C8; FAST GROWING &ndash; LinkedIn InMail</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4E9; LinkedIn InMail</div>
+        <p>Hi [First Name],</p>
+        <p><strong>[Company Name]</strong>&rsquo;s Azure growth trajectory is impressive &ndash; sustained month-over-month increases that tell me you&rsquo;re scaling real production workloads, not just experimenting.</p>
+        <p>I partner with Digital Natives at exactly this stage to structure strategic Azure relationships &ndash; think custom economics, co-sell access, and dedicated technical support rather than a standard vendor arrangement.</p>
+        <p>Companies growing at your pace typically leave 20&ndash;30% in savings on the table without a strategic conversation. Worth 20 minutes to see if there&rsquo;s mutual fit?</p>
+        <p>Cheers,<br>Blake Giles<br>Senior BDM | Azure HTP &ndash; Digital Natives</p>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
+    <!-- New ACR InMail -->
+    <div class="linkedin-card">
+      <div class="linkedin-header new">&#x1F195; NEW ACR &ndash; LinkedIn InMail</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4E9; LinkedIn InMail</div>
+        <p>Hi [First Name],</p>
+        <p>Congrats on getting started with Azure! I saw <strong>[Company Name]</strong> recently began building on the platform, and I wanted to connect early.</p>
+        <p>I lead partnerships with Digital Natives at Microsoft &ndash; my job is to make sure companies like yours get the most out of Azure from day one: architecture alignment, pricing strategy, Marketplace GTM, and executive access.</p>
+        <p>I&rsquo;d love a quick 15&ndash;20 minute intro to hear about your vision and share how we typically support companies at your stage.</p>
+        <p>Best,<br>Blake Giles<br>Senior BDM | Azure HTP &ndash; Digital Natives</p>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
+    <!-- Follow-Up After No Response -->
+    <div class="linkedin-card">
+      <div class="linkedin-header conn">&#x1F504; Follow-Up &ndash; No Response</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4AC; LinkedIn Follow-Up Message</div>
+        <p>Hi [First Name] &ndash; following up on my earlier note. I know LinkedIn messages can get buried.</p>
+        <p>Quick summary: I work with Digital Natives at Microsoft on strategic Azure partnerships. Your growth profile suggests there may be meaningful value in a conversation &ndash; custom pricing, co-sell, dedicated engineering.</p>
+        <p>Happy to work around your schedule. Even a 15-minute call would be enough to see if there&rsquo;s fit.</p>
+        <p>Blake</p>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
+    <!-- Mutual Connection Warm Intro -->
+    <div class="linkedin-card">
+      <div class="linkedin-header conn">&#x1F465; Warm Intro Request</div>
+      <div class="linkedin-body">
+        <div class="msg-type">&#x1F4AC; Message to Mutual Connection</div>
+        <p>Hey [Mutual Name] &ndash; I see you&rsquo;re connected to [CEO First Name] at [Company Name]. They&rsquo;re doing impressive things on Azure and I&rsquo;d love to explore a strategic partnership with them.</p>
+        <p>Would you be open to making an intro? I promise to keep it relevant and valuable for them &ndash; no hard sell.</p>
+        <p>Really appreciate it!</p>
+        <p>Blake</p>
+        <button class="copy-btn" onclick="copyTemplate(this)">&#x1F4CB; Copy to clipboard</button>
+      </div>
+    </div>
+
   </div>
 </div>
 
